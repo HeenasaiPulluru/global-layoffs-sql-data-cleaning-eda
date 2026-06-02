@@ -19,12 +19,12 @@ This project demonstrates strong SQL skills including data preprocessing, transf
 
 ## 📂 Project Structure
 
-### SQL Scripts
-📄 [Data Cleaning Script](SQL/data_cleaning.sql)  
-📄 [EDA Queries Script](SQL/eda_queries.sql)
+### 📁 SQL Scripts
+- [Data Cleaning Script](SQL/data_cleaning.sql) → Data cleaning and preprocessing steps  
+- [EDA Queries Script](SQL/eda_queries.sql) → Exploratory data analysis queries  
 
-### Results
-📊 Screenshots of analysis outputs stored in `/results` folder
+### 📁 Results
+- Screenshots of analysis outputs stored in `/results` folder
 
 README.md
 
@@ -126,10 +126,16 @@ This analysis helps businesses and analysts:
 
 These visuals help in better understanding of the analysis results.
 
-## 👤 Author
+👤 Author
 
 **Heenasai Pulluru**  
+Data Analyst  
 
+🛠 Skills:
+SQL | Excel | Power BI | Python | Data Cleaning | EDA | Data Visualization | Git & GitHub
 
+---
+
+⭐ If you like this project, feel free to star the repository and connect with me!
 
 
