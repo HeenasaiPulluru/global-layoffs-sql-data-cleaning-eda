@@ -1,88 +1,135 @@
-# 🚀 Global Layoffs SQL Data Cleaning & Exploratory Data Analysis
+ # 🚀 Global Layoffs SQL Data Cleaning & Exploratory Data Analysis
+ ## 🎯 Objective
 
-## 🎯 Objective
-The objective of this project is to clean and analyze a real-world global layoffs dataset using SQL in order to uncover trends in workforce reductions across companies, industries, countries, and time periods.
+The objective of this project is to perform data cleaning and exploratory data analysis (EDA) on a real-world global layoffs dataset using SQL.
 
----
+The goal is to understand patterns in workforce reductions across companies, industries, countries, and time periods.
+
+This project demonstrates strong SQL skills including data preprocessing, transformations, and analytical querying.
 
 ## 🛠 Tools & Technologies
-- MySQL
-- SQL (CTEs, Window Functions, Aggregations)
-- Data Cleaning Techniques
-- Exploratory Data Analysis (EDA)
 
----
+- MySQL
+- SQL
+- Window Functions (ROW_NUMBER, RANK, DENSE_RANK)
+- Common Table Expressions (CTEs)
+- Aggregations & Grouping
+- Date Functions
+- Data Cleaning Techniques
 
 ## 📂 Project Structure
-/data_cleaning.sql → SQL scripts for cleaning raw data
-/eda_queries.sql → SQL scripts for exploratory data analysis
-/results/ → Screenshots of query outputs and insights
 
+SQL/
+ ├── data_cleaning.sql   → Data cleaning and preprocessing steps
+ ├── eda_queries.sql     → Exploratory data analysis queries
 
----
+results/
+ ├── screenshots/        → Query outputs and visual insights
+
+README.md
 
 ## 🧹 Data Cleaning Process
-- Removed duplicate records using `ROW_NUMBER()` window function  
-- Created a staging table to preserve raw data  
-- Standardized company names and industry values  
-- Handled missing values (NULLs) in key columns  
-- Converted date column into proper DATE format  
-- Removed inconsistent and invalid records  
 
----
+The dataset was cleaned using multiple SQL techniques:
+
+### ✔ 1. Removing Duplicates
+- Used ROW_NUMBER() window function
+- Identified and removed duplicate records
+
+### ✔ 2. Creating Staging Tables
+- Created layoffs_staging and layoffs_staging2
+- Preserved raw dataset for safety
+
+### ✔ 3. Standardizing Data
+- Trimmed extra spaces in company names
+- Standardized industry values (e.g., "Crypto" → "crypto")
+- Cleaned country values (removed trailing characters)
+
+### ✔ 4. Handling Missing Values
+- Converted blank values to NULL
+- Used self-joins to fill missing industry data
+
+### ✔ 5. Date Formatting
+- Converted text date to proper DATE format using STR_TO_DATE()
+- Altered column type to DATE
+
+### ✔ 6. Removing Invalid Records
+- Removed rows where both:
+  - total_laid_off IS NULL
+  - percentage_laid_off IS NULL
 
 ## 📊 Exploratory Data Analysis (EDA)
 
-### 1. Top Companies by Layoffs
-Identified companies with the highest total layoffs globally.
+### 1️⃣ Top Companies by Layoffs
+- Identified companies with the highest total layoffs globally
 
-### 2. Industry-Wise Impact
-Analyzed which industries were most affected (e.g., Technology, Finance, Healthcare).
+### 2️⃣ Industry-Wise Analysis
+- Found which industries were most affected (e.g., Tech, Finance)
 
-### 3. Layoffs Over Time
-Trended layoffs on a monthly and yearly basis using aggregation.
+### 3️⃣ Country-Wise Impact
+- Compared layoffs across different countries
 
-### 4. Country-Wise Analysis
-Compared layoffs across different countries to identify regional impact.
+### 4️⃣ Time-Based Trends
+- Analyzed layoffs across years and months
+- Identified peak layoff periods
 
-### 5. Stage-Wise Analysis
-Analyzed layoffs based on company funding stage (Startup vs Enterprise).
+### 5️⃣ Stage-Wise Analysis
+- Evaluated layoffs based on company funding stage (Startup vs Enterprise)
 
----
+### 6️⃣ Rolling Total Analysis
+- Used window functions to calculate cumulative layoffs over time
+
+### 7️⃣ Top Companies Per Year
+- Ranked companies using DENSE_RANK() per year based on layoffs
 
 ## 📈 Key Insights
-- The **Technology sector** experienced the highest layoffs globally  
-- The years **2022–2023** showed the peak in global layoffs  
-- A small number of companies contributed disproportionately to total layoffs  
-- Early-stage startups were more vulnerable to workforce reductions  
-- Layoffs were heavily concentrated in specific countries and regions  
 
----
+- The Technology sector experienced the highest number of layoffs globally
+- The years 2022–2023 showed peak layoff activity
+- A small number of companies contributed to a large portion of total layoffs
+- Early-stage startups were more vulnerable to workforce reductions
+- Layoffs were heavily concentrated in specific countries and regions
+- Layoff trends show clear economic downturn patterns over time
 
 ## 💡 Business Impact
-This analysis helps organizations and analysts to:
 
-- Understand macroeconomic impact on employment trends  
-- Identify industries most at risk during downturns  
-- Analyze workforce stability across global markets  
-- Support data-driven hiring and investment decisions  
+This analysis helps businesses and analysts:
 
----
+- Understand global employment trends
+- Identify industries most affected during economic downturns
+- Analyze company stability across funding stages
+- Support data-driven hiring and investment decisions
+- Monitor workforce risks across regions and sectors
 
 ## 🔥 Advanced SQL Concepts Used
-- Window Functions (`ROW_NUMBER`, `RANK`, `DENSE_RANK`)
+
+- Window Functions:
+  - ROW_NUMBER()
+  - RANK()
+  - DENSE_RANK()
+
 - Common Table Expressions (CTEs)
-- Aggregation & Grouping
-- Date formatting and transformation
-- Subqueries and derived tables
+- Aggregations & Grouping
+- Date Manipulation Functions
+- Self Joins
+- Subqueries
+- Rolling Calculations
 
----
+## 📸 Visualizations
 
-## 📸 Visuals
-(Add screenshots of SQL outputs inside `/results` folder)
+- Add screenshots of SQL query outputs in the `/results` folder
+- Include key insights such as:
+  - Top companies by layoffs
+  - Industry-wise layoffs
+  - Yearly trend of layoffs
+  - Rolling total analysis
 
----
+These visuals help in better understanding of the analysis results.
 
 ## 👤 Author
+
 **Heenasai Pulluru**  
-Data Analyst Portfolio Project  
+
+
+
+
