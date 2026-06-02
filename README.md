@@ -19,12 +19,12 @@ This project demonstrates strong SQL skills including data preprocessing, transf
 
 ## 📂 Project Structure
 
-SQL/
- ├── data_cleaning.sql   → Data cleaning and preprocessing steps
- ├── eda_queries.sql     → Exploratory data analysis queries
+### SQL Scripts
+📄 [Data Cleaning Script](SQL/data_cleaning.sql)  
+📄 [EDA Queries Script](SQL/eda_queries.sql)
 
-results/
- ├── screenshots/        → Query outputs and visual insights
+### Results
+📊 Screenshots of analysis outputs stored in `/results` folder
 
 README.md
 
