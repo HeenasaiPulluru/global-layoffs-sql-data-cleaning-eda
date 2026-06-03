@@ -17,6 +17,14 @@ This project demonstrates strong SQL skills including data preprocessing, transf
 - Date Functions
 - Data Cleaning Techniques
 
+📊 Dataset
+
+The dataset used in this project is publicly available on Kaggle:
+
+🔗 [Global Layoffs Dataset (2022)](https://www.kaggle.com/datasets/swaptr/layoffs-2022)
+
+This dataset contains information about company layoffs across industries, countries, and time periods, and was used for SQL-based data cleaning and exploratory data analysis.
+
 ## 📂 Project Structure
 
 ### 📁 SQL Scripts
