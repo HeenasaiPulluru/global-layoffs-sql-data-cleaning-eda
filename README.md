@@ -115,11 +115,12 @@ This analysis helps businesses and analysts:
 
 ## 📸 Visualizations
 
-- Add screenshots of SQL query outputs in the `/results` folder
+- Add screenshots of SQL query outputs in the [results folder](results/)
 - Include key insights such as:
   - Top companies by layoffs
   - Industry-wise layoffs
   - Yearly trend of layoffs
+  - Top companies by year(Rank Analysis)
   - Rolling total analysis
 
 These visuals help in better understanding of the analysis results.
