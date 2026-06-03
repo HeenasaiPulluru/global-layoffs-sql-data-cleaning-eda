@@ -24,9 +24,7 @@ This project demonstrates strong SQL skills including data preprocessing, transf
 - [EDA Queries Script](SQL/eda_queries.sql) → Exploratory data analysis queries  
 
 ### 📁 Results
-- Screenshots of analysis outputs stored in `/results` folder
-
-README.md
+Screenshots of analysis outputs stored in [results folder](results/)
 
 ## 🧹 Data Cleaning Process
 
